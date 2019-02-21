@@ -66,7 +66,7 @@ while(cap.isOpened()):
     averaged_lines = average_slope_intercept(frame, lines)
     line_image = display_lines(frame, averaged_lines)
     combo_image = cv2.addWeighted(frame, 0.8, line_image, 1, 1)
-    cv2.imshow("result", cropped_image)
+    cv2.imshow("result", combo_image)
     if cv2.waitKey(1) == ord('q'):
         break
 
